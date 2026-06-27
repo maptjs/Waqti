@@ -1,0 +1,61 @@
+name: waqti
+description: وقتي - تعلم قراءة الساعة للأطفال
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State management
+  provider: ^6.1.1
+
+  # Animations
+  flutter_animate: ^4.5.0
+  lottie: ^3.1.0
+
+  # Audio
+  audioplayers: ^6.1.0
+
+  # Persistence
+  shared_preferences: ^2.2.3
+
+  # UI
+  google_fonts: ^6.2.1
+  confetti: ^0.7.0
+  percent_indicator: ^4.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/images/app_icon.png"
+  adaptive_icon_background: "#1565C0"
+  adaptive_icon_foreground: "assets/images/app_icon_fg.png"
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/audio/
+
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Regular.ttf
+        - asset: assets/fonts/Cairo-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Cairo-ExtraBold.ttf
+          weight: 800
